@@ -37,7 +37,8 @@ function Login() {
             </div>
         </div>
         {isModalVisible.signIn && <div id="react-modals">
-        <Modal getContainer="#react-modals" className={styles.modal} visible={isModalVisible.signIn} closable={true} footer={null}>
+        <Modal getContainer="#react-modals" className={styles.modal} visible={isModalVisible.signIn} 
+        closable={true} footer={null} mask={false} onCancel={() => dispatch(hide())} > 
           <SignIn/>
         </Modal>
       </div>}

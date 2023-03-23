@@ -1,4 +1,5 @@
 import '@/styles/globals.css'
+import Head from 'next/head';
 
 // redux imports
 import { Provider } from 'react-redux';
@@ -26,6 +27,9 @@ export default function App({ Component, pageProps }) {
   return (
     <Provider store={store}>
       <PersistGate persistor={persistor}>
+      <Head>
+          <title>Twitter Clone</title>
+        </Head>
   <Component {...pageProps} />  
     </PersistGate>
   </Provider>

@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import styles from '../styles/SignIn.module.css';
 import Image from 'next/image';
 import { showSignUp, showSignIn, hide } from '../reducers/isModalVisible';
+import Link from 'next/link';
 
 function SignIn() {
     const [username, setUsername] = useState('');
@@ -11,6 +12,7 @@ function SignIn() {
     const user = useSelector((state) => state.user.value);
     const isModalVisible = useSelector((state) => state.isModalVisible.value);
 
+    
   return (
     <div>
         <div className={styles.signIncontainer} > 
@@ -18,7 +20,7 @@ function SignIn() {
         <h2>Connect to Hackatweet</h2>
         <input type="text" placeholder="Username" onChange={(e) => setUsername(e.target.value)}  />
         <input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
-        <button className={styles.btnSignIn} onClick={() => dispatch(hide())}>Sign In</button>
+        <Link href="/home"><button className={styles.btnSignIn} onClick={() => dispatch(hide())}>Sign In</button></Link>
       </div>
     </div>
   );

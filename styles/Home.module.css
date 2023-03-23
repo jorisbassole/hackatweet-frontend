@@ -1,0 +1,25 @@
+.homePage {
+    display: flex;
+    height: 100vh;
+    border: red 1px solid;
+    background-color: #202020
+}
+
+.left {
+    width: 20%;
+    border: green 1px solid;
+}
+
+.middle {
+    width: 50%;
+    border: blue 1px solid;
+}
+
+.right {
+    width: 30%;
+    border: violet 1px solid;
+}
+
+.egg {
+border-radius: 40%;
+}
