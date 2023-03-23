@@ -1,0 +1,14 @@
+.smalllogo {
+    transform: rotate(180deg);
+   }
+
+   .signIncontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;  
+    height: 17rem; 
+    width: 20rem;
+   }

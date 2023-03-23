@@ -1,0 +1,67 @@
+.login {
+    display: flex;
+    justify-content: center;
+}
+
+.leftSection {
+    width: 40%;
+    height: 100vh;
+    border: red 2px solid;
+    background-image: url("../public/background.png");
+    background-size: cover;  
+    position: relative;  
+}
+
+.rightSection {
+    width: 60%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    border: red 2px solid;
+    display: flex;
+}
+
+.leftCol {
+    width: 30%;
+    border: green 2px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+.logo {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto auto;
+    transform: rotate(180deg);
+}
+
+.smalllogo {
+    position: absolute;
+    top: 2rem;
+    transform: rotate(180deg);
+     
+}
+
+.btnSignUp {
+    color: white;
+    background-color: #119AFB;
+    border-radius: 8px;
+    height: 2rem;
+    width: 7rem;
+    border: none;
+}
+
+.btnSignIn {
+    color: #119AFB;
+    background-color: black;
+    border: 1px solid #119AFB;
+    border-radius: 8px;
+    height: 2rem;
+    width: 7rem;
+    }
