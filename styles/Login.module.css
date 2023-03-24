@@ -14,7 +14,7 @@
 .rightSection {
     width: 60%;
     height: 100vh;
-    background-color: #181818;
+    background-color: #0C1217;
     color: white;
     display: flex;
 }
@@ -47,7 +47,7 @@
 
 .btnSignUp {
     color: white;
-    background-color: #119AFB;
+    background-color:  #1C8EEC;
     border-radius: 8px;
     height: 2rem;
     width: 7rem;
@@ -55,9 +55,9 @@
 }
 
 .btnSignIn {
-    color: #119AFB;
+    color:  #1C8EEC;
     background-color: #181818;
-    border: 1px solid #119AFB;
+    border: 1px solid  #1C8EEC;
     border-radius: 8px;
     height: 2rem;
     width: 7rem;

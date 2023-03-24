@@ -1,0 +1,19 @@
+.btnTweet {
+background-color: #1C8EEC;
+color: white;
+border-radius: 20px;
+height: 20px;
+width: 50px;
+border: none;
+}
+
+.counter {
+font-size: 10px;
+}
+
+.inputTweet {
+    background-color: #151D28;
+    border: none;
+    border-bottom:  #202836 2px solid;
+    color: white;
+}

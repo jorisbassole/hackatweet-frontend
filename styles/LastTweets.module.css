@@ -1,0 +1,31 @@
+.firstName {
+font-size: 12px;
+font-weight: 800;
+}
+
+.username {
+    font-size: 10px;
+    font-weight: 400;
+    color:  #313A49;
+}
+
+.date {
+    font-size: 10px;
+    font-weight: 400;
+    color:  #313A49;
+}
+
+.egg {
+    border-radius: 40%;
+    margin: 2px;
+    }
+
+.tweetText {
+    font-size: 10px;
+    font-weight: 400;
+    }
+
+.tweetContainer {
+    height: 5rem;
+
+}

@@ -5,8 +5,12 @@ import Image from 'next/image';
 import Tweet from '../components/Tweet';
 import LastTweets from '../components/LastTweets';
 import Trends from '../components/Trends';
+import Link from 'next/link';
+import {login, logout } from '../reducers/user';
 
 function Home() {
+  const dispatch = useDispatch();
+  const user = useSelector((state) => state.user.value);
 
  return (
 <div className={styles.homePage}>
@@ -15,14 +19,19 @@ function Home() {
     <div className={styles.logout} >
     <Image src='/egg.jpg' alt="egg" width={30} height={30} className={styles.egg} />
     <div className={styles.user} >
-    <span>firstName</span><br />
-    <span>username</span>
+    <span>{user.firstName}</span><br />
+    <span>{user.username}</span>
     </div>
-    <button className={styles.btnLogout} >Logout</button>
+    <Link href="/"><button className={styles.btnLogout} onClick={() => dispatch(logout())} >Logout</button></Link>
     </div>
   </div>
   <div className={styles.middle}>
-      <LastTweets />
+    <div className={styles.middleUp}>
+      <Tweet/>
+    </div>
+    <div className={styles.middleDown}>
+      <LastTweets/>
+    </div>
   </div>
   <div className={styles.right}>
     <Trends/>

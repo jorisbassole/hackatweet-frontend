@@ -4,15 +4,12 @@ import styles from '../styles/Home.module.css';
 import Image from 'next/image';
 
 function Trends() {
-
+  
+  
  return (
 <div>
-   
-  <div>
-  <Image src='/egg.jpg' alt="egg" width={30} height={30} className={styles.egg} />
-    <span>firstName</span>
-    <span>username</span>
-  </div>
+  <p>Trends</p>
+  <div className={styles.hashtagsContainer}></div>
 </div>
  )
 }
