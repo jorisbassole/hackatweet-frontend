@@ -11,9 +11,15 @@ function Home() {
  return (
 <div className={styles.homePage}>
   <div className={styles.left} >
+    <Image src='/logo.png' alt="logo" width={50} height={50} className={styles.smalllogo} />
+    <div className={styles.logout} >
     <Image src='/egg.jpg' alt="egg" width={30} height={30} className={styles.egg} />
-    <span>firstName</span>
+    <div className={styles.user} >
+    <span>firstName</span><br />
     <span>username</span>
+    </div>
+    <button className={styles.btnLogout} >Logout</button>
+    </div>
   </div>
   <div className={styles.middle}>
       <LastTweets />

@@ -7,7 +7,7 @@ function LastTweets() {
 
  return (
 <div>
-    <Image src='/logo.png' alt="logo" width={50} height={50} className={styles.smalllogo} />
+   
   <div>
   <Image src='/egg.jpg' alt="egg" width={30} height={30} className={styles.egg} />
     <span>firstName</span>
